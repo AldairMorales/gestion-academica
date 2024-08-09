@@ -1,0 +1,24 @@
+<div class="login-container">
+    <mat-card>
+        <mat-card-title>Iniciar sesión</mat-card-title>
+        <form >
+          <mat-form-field appearance="fill">
+            <mat-label>Correo electrónico</mat-label>
+            <input matInput placeholder="Correo electrónico" name="email" ngModel required>
+            <mat-error >
+              Correo electrónico es requerido.
+            </mat-error>
+          </mat-form-field>
+      
+          <mat-form-field appearance="fill">
+            <mat-label>Contraseña</mat-label>
+            <input matInput type="password" placeholder="Contraseña" name="password" ngModel required>
+            <mat-error >
+              Contraseña es requerida.
+            </mat-error>
+          </mat-form-field>
+      
+          <button mat-raised-button color="primary" type="submit" >Iniciar sesión</button>
+        </form>
+      </mat-card>
+  </div>
